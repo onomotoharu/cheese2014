@@ -51,9 +51,10 @@ recommend
 ----------
 
 */
-.recommend_card{  
+.recommend_card{ 
   /*font-family: "ヒラギノ角ゴ Pro W3";  TODO:bodyとかhtmlにfont-familyが効かない*/
   width: 250px;
+  height: 330px;
   background: rgb(255,255,255);
   margin-top: 30px;
   margin-bottom: 20px;
@@ -62,7 +63,9 @@ recommend
   border: 1px solid rgb(200,200,200);
   box-shadow: 0px 0px 10px rgba(200,200,200,0.4);
   border-radius: 6px;
-  position: relative;
+  position: absolute;
+  top: 50px;
+  left:25px;
   z-index: 100;
 }
 
@@ -76,6 +79,18 @@ recommend
 }
 .recommend_card_ingridients{
   color: rgb(126,126,126);
+}
+
+
+.recommend_card_spacer{ 
+  width: 250px;
+  height: 330px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left : auto ; margin-right : auto ;
+  padding: 10px;
+  position: relative;
+  z-index: 0;
 }
 
 .recommend_card_dummy_1{  

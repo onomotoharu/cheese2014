@@ -4,12 +4,5 @@ cheeseControllers.controller('RecommendCtrl',function($scope,$http,$rootScope, $
   $rootScope.headerShow = true;
   $rootScope.footerShow = false;
 
-$(window).on('touchmove.noScroll', function(e) {
-    e.preventDefault();
-});
-
-// function(){
-	$(".recommend_card").draggable();
-// };
-
+  $(".recommend_card").draggable();
 });
