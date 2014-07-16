@@ -54,14 +54,14 @@ recommend
 .recommend_card{ 
   /*font-family: "ヒラギノ角ゴ Pro W3";  TODO:bodyとかhtmlにfont-familyが効かない*/
   width: 250px;
-  height: 330px;
+  height: 320px;
   background: rgb(255,255,255);
   margin-top: 30px;
   margin-bottom: 20px;
   margin-left : auto ; margin-right : auto ;
   padding: 10px;
   border: 1px solid rgb(200,200,200);
-  box-shadow: 0px 0px 10px rgba(200,200,200,0.4);
+  /*box-shadow: 0px 0px 10px rgba(200,200,200,0.4);*/
   border-radius: 6px;
   position: absolute;
   top: 50px;
@@ -84,7 +84,7 @@ recommend
 
 .recommend_card_spacer{ 
   width: 250px;
-  height: 330px;
+  height: 310px;
   margin-top: 30px;
   margin-bottom: 20px;
   margin-left : auto ; margin-right : auto ;
@@ -134,6 +134,14 @@ recommend
   float: left;
   text-align: center;
   background-color: rgb(255,255,255);
+}
+
+
+.recommend_button.ng-click-active, 
+.recommend_button:active{
+  margin-top:25px;
+  box-shadow: 0px -1px 0px rgb(200,200,200);
+  background-color: rgb(240,240,240);
 }
 
 .recommend_button i{

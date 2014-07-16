@@ -1,5 +1,6 @@
 var cheeseApp = angular.module('cheeseApp',[
 	'ngRoute',
+  'ngTouch',
 	'cheeseControllers'
 	]);
 
