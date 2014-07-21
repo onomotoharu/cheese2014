@@ -12,6 +12,18 @@ cheeseApp.config(['$routeProvider',
         templateUrl: 'partials/recommend.html',
         controller: 'RecommendCtrl'
       }).
+      when('/recipe', {
+        templateUrl: 'partials/recipe.html',
+        controller: 'RecipeCtrl'
+      }).
+      when('/mypage', {
+        templateUrl: 'partials/mypage.html',
+        controller: 'MypageCtrl'
+      }).
+      when('/setting', {
+        templateUrl: 'partials/setting.html',
+        controller: 'SettingCtrl'
+      }).
       otherwise({
         redirectTo: '/'
       });

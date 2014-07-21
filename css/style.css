@@ -9,11 +9,28 @@ body{
 }
 
 #header{
+  position: fixed;
+  width: 100%;
   height: 30px;
   background: rgb(239,197,45);
   box-shadow: 0px -2px 0px rgb(209,167,9) inset;
-  padding: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  z-index: 200; 　/*　主にカードページ用 */
 }
+
+#header_spacer{
+  height: 56px;
+}
+
+#header_title{
+  margin-top: 3px;
+  text-align: center;
+  color: rgb(255,252,222);
+  text-shadow: 0px 2px 0px rgb(223,184,41);  
+  font-size: 24px;
+}
+
 #logo{
   height: 30px;
   display: block;
@@ -28,14 +45,41 @@ body{
 
 }
 .header_button.left{
+  margin-left: 10px;
   float: left;
 }
 .header_button.right{
+  margin-right: 10px;
   float: right;
 }
 
-div#main{
+div#main,#header_title{
   font-family: "ヒラギノ角ゴ Pro W3"; /* TODO:bodyとかhtmlにfont-familyが効かない*/
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(187,172,138);
+  border-top: 1px solid rgb(162,158,149);
+  outline: solid 1px rgb(206,206,202);
+}
+
+#footer_spacer{
+  height: 50px;
+}
+
+.footer_button{
+  color: rgb(129,117,90);
+  text-shadow: 0px 1px 0px rgb(113,99,74);  
+  width: 25%;
+  text-align: center;
+  float: left;
 }
 
 /*
@@ -49,7 +93,6 @@ partials
 ----------
 recommend
 ----------
-
 */
 .recommend_card{ 
   /*font-family: "ヒラギノ角ゴ Pro W3";  TODO:bodyとかhtmlにfont-familyが効かない*/
@@ -61,7 +104,7 @@ recommend
   margin-left : auto ; margin-right : auto ;
   padding: 10px;
   border: 1px solid rgb(200,200,200);
-  /*box-shadow: 0px 0px 10px rgba(200,200,200,0.4);*/
+  /*box-shadow: 0px 0px 10px rgba(200,200,200,0.4); 消したほうが若干速いので*/
   border-radius: 6px;
   position: absolute;
   top: 50px;
@@ -81,16 +124,8 @@ recommend
   color: rgb(126,126,126);
 }
 
-
 .recommend_card_spacer{ 
-  width: 250px;
-  height: 310px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left : auto ; margin-right : auto ;
-  padding: 10px;
-  position: relative;
-  z-index: 0;
+  height: 388px;
 }
 
 .recommend_card_dummy_1{  
@@ -136,7 +171,6 @@ recommend
   background-color: rgb(255,255,255);
 }
 
-
 .recommend_button.ng-click-active, 
 .recommend_button:active{
   margin-top:25px;
@@ -146,7 +180,6 @@ recommend
 
 .recommend_button i{
   display: block;
-  /*padding: 10px;*/
   margin-top: 10px;
   font-size: 45px;
 }
@@ -165,3 +198,351 @@ recommend
 .recommend_button.like i{
   color: rgb(180,56,58);
 }
+
+/*
+----------
+recipe
+----------
+*/
+.recipe_subtitle{
+  color: rgb(255,255,255);
+}
+
+#recipe_image{
+  width:260px;
+  padding: 10px;
+  margin:10px;
+  margin-left : auto ; margin-right : auto ;
+
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(50,50,50,0.4);
+}
+
+#recipe_image img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+#recipe_title{
+  margin:5px;
+  font-size: 17px;
+  color: rgb(217,178,86);
+}
+
+.recipe_section{
+  width: 260px;
+  margin: 10px;
+  padding: 10px;
+  margin-left : auto ; margin-right : auto ;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(50,50,50,0.4);
+}
+
+#recipe_know_how{
+  background-color: rgb(237,132,98);
+  line-height: 22px;
+}
+
+.recipe_subsection{
+  width: 280px;
+  margin-left: -10px;
+  margin-top: 3px;
+  background-color: rgb(255,255,255);
+}
+
+
+#recipe_know_how ul{
+  padding: 6px;
+  padding-left: 25px;
+  list-style-type: disc;
+}
+
+#recipe_know_how ul li{
+  padding: 4px;
+  color: rgb(237,132,98);
+}
+
+#recipe_know_how ul li span{
+  color: rgb(0,0,0);
+}
+
+#recipe_ingridents{
+  background-color: rgb(244,173,92);
+}
+
+
+#recipe_ingridents table{
+  width: 100%;
+  border: 3px rgb(255,255,255) solid;
+}
+
+#recipe_ingridents td, #recipe_ingridents th{
+  border: 2px rgb(200,200,200) solid;
+  padding: 5px;
+}
+
+#recipe_process{
+background-color: rgb(254,223,51);
+}
+
+#recipe_process table{
+  width: 100%;
+  border: 3px rgb(255,255,255) solid;
+  vertical-align:top;
+}
+
+#recipe_process tr{
+  border: 2px rgb(200,200,200) solid;
+  padding: 5px;
+}
+
+#recipe_process th{
+  width: 25px;
+  font-size: 30px;
+  padding: 5px;
+  color: rgb(254,223,51);
+}
+
+#recipe_done{
+  margin-left : auto ; margin-right : auto ;
+  width: 200px;
+  text-align: center;
+  height: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(254,223,51);
+  color: rgb(230,91,49);
+  box-shadow: 2px 4px 2px rgba(50,50,50,0.4);
+}
+
+/*
+----------
+mypage
+----------
+*/
+
+#mypage_selector{
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  background-color: rgb(255,255,255);
+  color: rgb(180,180,180);
+  box-shadow: 0px -1px 0px rgb(150,150,150) inset;
+}
+
+#mypage_selector p{
+  font-size: 12px;
+}
+
+#mypage_selector .selected{
+  color: rgb(0,164,0);    
+}
+
+
+.mypage_selector_button{
+  width: 30%;
+  text-align: center;
+  float: left;
+}
+
+.mypage_selector_section_line{
+  width: 5%;
+  float: left;
+}
+
+#mypage_title{
+  height: 56px;
+  font-size:20px;
+  background-color: rgb(90,199,106);
+  box-shadow: 0px -2px 0px rgb(0,164,0) inset;
+}
+
+#mypage_title p{
+  padding-top:18px;
+  color: rgb(255,255,255);
+  text-align: center;
+}
+
+#mypage_title_logo{
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  padding: 10px;
+  margin-top: 6px;
+  margin-left: 6px;
+  float: left;
+  background-color: rgb(255,255,255);
+  border-radius: 100%;
+  text-align: center;
+  color: rgb(0,164,0);
+}
+
+/* タイトル中央寄せ用　*/
+#mypage_title_logo_dummy{
+  width: 24px;
+  padding: 10px;
+  margin-right: 6px;
+  float: right;
+}
+
+
+.mypage_recipe{
+  height: 100px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px -1px 0px rgb(200,200,200) inset;
+}
+.mypage_recipe img{
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.mypage_recipe_detail{
+  padding:10px;
+  padding-left: 110px;
+  color: rgb(150,150,150);
+}
+
+.mypage_recipe_timestamp{
+  text-align: right;
+  font-size: 13px;
+}
+
+.mypage_recipe_title{
+  font-size: 22px;
+}
+
+.mypage_recipe_ingridients{
+  font-size: 15px;
+}
+
+
+/*
+----------
+setting
+----------
+*/
+
+.setting_section_box{
+  width: 100%;
+  font-size: 15px;
+  color: rgb(100,100,100);
+}
+
+.setting_section_title{
+  padding: 10px;  
+}
+
+.setting_section{
+  background-color: rgb(255,255,255);
+  padding: 15px;
+  border: 2px solid rgb(200,200,200); 
+  border-width: 2px 0px 2px 0px; 
+}
+
+
+.setting_section.social .fa-angle-right{
+  float: right;
+}
+
+.setting_section.social i{
+  padding: 5px;
+}
+
+.setting_section_line{
+   border-width: 2px 0px 0px 0px; 
+   border-style: solid;
+   border-color: rgb(200,200,200); 
+}
+
+#setting_inquery{
+  padding-bottom: 10px;
+}
+
+#mypage_inquery_form{
+  -webkit-appearance: none;
+  width: 280px;
+  margin-left : auto ; margin-right : auto ;
+  height: 7em;
+  line-height: 18px;
+  resize:none;
+  border-radius: 6px;
+}
+
+
+#mypage_inquery_button{
+  width: 100px;
+  margin-top: 10px;
+  margin-left : auto ; margin-right : auto ;
+  background-color: rgb(0,164,0);
+  text-align: center;
+  color: rgb(255,255,255);
+  height: 18px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 0px rgb(0,80,0);
+}
+
+#setting_logout{
+  width: 100%;
+/*  position: absolute;
+  bottom: 0; */ 
+  color: rgb(255,255,255);
+  background-color: rgb(100,100,100);
+  height: 18px;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+
+
+/*
++++++++++++++++++++++
+  css for demo 
++++++++++++++++++++++
+*/
+
+.setting_section_box .fa-instagram{
+  color: rgb(0,164,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
