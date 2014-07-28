@@ -24,6 +24,10 @@ cheeseApp.config(['$routeProvider',
         templateUrl: 'partials/setting.html',
         controller: 'SettingCtrl'
       }).
+      when('/post', {
+        templateUrl: 'partials/post.html',
+        controller: 'PostCtrl'
+      }).
       otherwise({
         redirectTo: '/'
       });

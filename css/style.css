@@ -53,6 +53,10 @@ body{
   float: right;
 }
 
+.header_button_post{
+  color: rgb(252,138,65);
+}
+
 div#main,#header_title{
   font-family: "ヒラギノ角ゴ Pro W3"; /* TODO:bodyとかhtmlにfont-familyが効かない*/
 }
@@ -205,7 +209,7 @@ recipe
 ----------
 */
 .recipe_subtitle{
-  color: rgb(255,255,255);
+  color: rgb(150,150,150);  
 }
 
 #recipe_image{
@@ -213,10 +217,9 @@ recipe
   padding: 10px;
   margin:10px;
   margin-left : auto ; margin-right : auto ;
-
   border-radius: 6px;
   background: #fff;
-  box-shadow: 2px 2px 4px rgba(50,50,50,0.4);
+  box-shadow: 0px 2px 3px rgba(50,50,50,0.4);
 }
 
 #recipe_image img{
@@ -227,25 +230,23 @@ recipe
 #recipe_title{
   margin:5px;
   font-size: 17px;
-  color: rgb(217,178,86);
+  color: rgb(150,150,150);    
 }
 
 .recipe_section{
-  width: 260px;
+  width: 100%;
   margin: 10px;
   padding: 10px;
   margin-left : auto ; margin-right : auto ;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(50,50,50,0.4);
+  background-color: rgb(250,245,187)
 }
 
 #recipe_know_how{
-  background-color: rgb(237,132,98);
   line-height: 22px;
 }
 
 .recipe_subsection{
-  width: 280px;
+  width: 100%;
   margin-left: -10px;
   margin-top: 3px;
   background-color: rgb(255,255,255);
@@ -260,15 +261,11 @@ recipe
 
 #recipe_know_how ul li{
   padding: 4px;
-  color: rgb(237,132,98);
+  color: rgb(250,245,187)
 }
 
 #recipe_know_how ul li span{
   color: rgb(0,0,0);
-}
-
-#recipe_ingridents{
-  background-color: rgb(244,173,92);
 }
 
 
@@ -280,10 +277,6 @@ recipe
 #recipe_ingridents td, #recipe_ingridents th{
   border: 2px rgb(200,200,200) solid;
   padding: 5px;
-}
-
-#recipe_process{
-background-color: rgb(254,223,51);
 }
 
 #recipe_process table{
@@ -306,14 +299,15 @@ background-color: rgb(254,223,51);
 
 #recipe_done{
   margin-left : auto ; margin-right : auto ;
-  width: 200px;
+  width: 180px;
   text-align: center;
   height: 20px;
-  padding: 10px;
+  padding: 13px;
   font-size: 20px;
-  background-color: rgb(254,223,51);
-  color: rgb(230,91,49);
-  box-shadow: 2px 4px 2px rgba(50,50,50,0.4);
+  color: rgb(255,255,255);
+  background-color: rgb(39,176,59);
+  border-radius: 6px;
+  box-shadow: 0px -2px 0px rgb(0,100,6) inset;
 }
 
 /*
@@ -501,6 +495,60 @@ setting
 }
 
 
+/*
+----------
+post
+----------
+*/
+
+#post_section{
+  border: 1px solid rgb(200,200,200);
+  background-color: rgb(255,255,255);
+  margin-top: 10px;
+  padding: 10px;
+  color: rgb(150,150,150)
+}
+
+
+#post_image{
+  height: 100px;
+  width: 100px;
+  float: left;
+  padding: 5px;
+}
+
+#post_timestamp{
+  text-align: right;
+  font-size:13px;
+}
+
+#post_title{
+  padding: 5px;
+  font-size: 16px;
+}
+
+.clear{
+  clear: both;
+}
+
+#post_stars{
+  color: rgb(239,197,45);
+  font-size: 35px;
+  text-align: center;
+}
+
+#post_comment{
+  -webkit-appearance: none;
+  margin-top: 10px;
+  width: 280px;
+  margin-left : auto ; margin-right : auto ;
+  height: 7em;
+  line-height: 18px;
+  resize:none;
+  border-radius: 6px;
+}
+
+
 
 /*
 +++++++++++++++++++++
@@ -515,34 +563,98 @@ setting
 
 
 
+/*==============================================================================================
+　fixme デザイン班より
+==============================================================================================*/
+
+/*common*/
+
+.header_title {
+  font-size: 18px !important;
+}
+
+/*recommend*/
+
+.recommend_card_title {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  padding: 6px 0 10px 0 !important;
+}
+
+.recommend_card_ingridients {
+  font-size: 12px !important;
+}
+
+.recommend_card {
+  height: 300px !important;
+}
+
+/*recipe*/
+
+p {
+  /*border: 2px solid rgb(200,200,200) !important;*/
+  /* p以外の文字色も、全てこれでお願いします*/
+}
 
 
+/*mypage*/
+
+#mypage_title {
+  font-size: 18px !important;
+}
+
+.mypage_recipe img {
+  padding:10px !important;
+}
+
+.mypage_recipe {
+  height: 123px !important;
+  /*おそらくコメントの投稿があるからheight:auto;のが良いんじゃないかな…？そんなことない…？ */
+}
+
+.mypage_recipe_timestamp {
+  font-size:10px !important;
+  /*スマホでみたら小さいかも…あとでまた変更をお願いするかもしれない*/
+}
+
+.mypage_recipe_title {
+  font-size:14px !important;
+  /*スマホでみたら小さいかも…あとでまた変更をお願いするかもしれない*/
+}
+
+.mypage_recipe_ingridients {
+  font-size: 12px !important;
+  /*スマホでみたら小さいかも…あとでまた変更をお願いするかもしれない*/
+}
+
+.mypage_selector_section_line {
+  /*ここのborder、1pxにはならないかな？*/
+}
+
+#mypage_selector {
+  padding-top: 6px !important;
+}
+
+.mypage_title_logo {
+  height: 20px !important;
+  width: 20px !important;
+  /*円の真ん中にアイコンおいてくれ〜*/
+}
+
+i.fa.fa-cutlery {
+  font-size: 24px !important;
+}
 
 
+/*setting*/
 
+i.fa.fa-twitter,
+i.fa.fa-instagram {
+  font-size: 20px !important;
+  padding-right: 10px !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.setting_logout {
+  font-size: 14px !important;
+}
 

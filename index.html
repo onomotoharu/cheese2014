@@ -21,8 +21,8 @@
 <body>
 
 <div id="header" ng-show="headerShow">
-  <div class="header_button left"><i class="fa {{headerIconLeft}}"></i></div>
-  <div class="header_button right"><i class="fa {{headerIconRight}}"></i></div>
+  <div class="header_button left {{headerIconLeftClass}}"><i class="fa {{headerIconLeft}}"></i></div>
+  <div class="header_button right {{headerIconRightClass}}"><i class="fa {{headerIconRight}}"></i></div>
   <img id="logo" src="./img/logo.png" ng-show="!title"/>  
   <p id="header_title">{{title}}</p>
 </div>
