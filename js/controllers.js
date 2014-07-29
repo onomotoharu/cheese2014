@@ -7,7 +7,13 @@ cheeseControllers.controller('RecommendCtrl',function($scope,$http,$rootScope, $
   $rootScope.headerIconRight = "fa-user"
   $rootScope.headerIconLeftClass = ""
   $rootScope.headerIconRightClass = ""  
-  $(".recommend_card").draggable();
+  // $(".recommend_card").draggable();
+
+
+  $rootScope.carouselPrev = function(id){
+    alert(id);
+  }
+
 });
 
 
