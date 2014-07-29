@@ -39,7 +39,8 @@ cheeseApp.directive( "carouselItem", function($rootScope, $swipe){
       var startX = null;
       var startY = null;
       var endAction = "cancel";
-      var carouselId = element.parent().parent().attr("id");
+      var carouselId = element;
+      // parent().parent().attr("id");
 
       var translateAndRotate = function(x, y, z, deg){
         element[0].style["-webkit-transform"] =
@@ -79,9 +80,9 @@ cheeseApp.directive( "carouselItem", function($rootScope, $swipe){
           if( startX != null) {
             var deltaX = coords.x - startX;
             var deltaXRatio = deltaX / element[0].clientWidth;
-            if (deltaXRatio > 0.3) {
+            if (deltaXRatio > 0.4) {
               endAction = "next";
-            } else if (deltaXRatio < -0.3){
+            } else if (deltaXRatio < -0.4){
               endAction = "prev";
             }
             translateAndRotate(deltaXRatio * 200, 0, 0, deltaXRatio * 15);
