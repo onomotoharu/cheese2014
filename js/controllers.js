@@ -15,7 +15,6 @@ cheeseControllers.controller('RecommendCtrl',function($scope,$http,$rootScope, $
     $rootScope.carouselNext = function(e) {
       $rootScope.$apply(function() { $location.path("/recipe"); });
     };
-
 });
 
 
@@ -26,8 +25,6 @@ cheeseControllers.controller('RecipeCtrl',function($scope,$http,$rootScope, $rou
   $rootScope.headerIconRight = ""
   $rootScope.headerIconLeftClass = ""
   $rootScope.headerIconRightClass = ""
-
-
   $scope.done = function(){
     $location.path("/post");
   }
@@ -54,7 +51,7 @@ cheeseControllers.controller('SettingCtrl',function($scope,$http,$rootScope, $ro
 });
 
 
-cheeseControllers.controller('PostCtrl',function($scope,$http,$rootScope, $routeParams){
+cheeseControllers.controller('PostCtrl',function($scope,$http,$rootScope, $routeParams, $location){
   $rootScope.headerShow = true;
   $rootScope.footerShow = false;
   $rootScope.headerIconLeft = "fa-home"
@@ -70,6 +67,12 @@ cheeseControllers.controller('PostCtrl',function($scope,$http,$rootScope, $route
 
   $scope.post = function(){
     $location.path("/mypage");
+    // alert(1)
+    // $window.location = "/mypage";
   }
 
 });
+
+
+
+
