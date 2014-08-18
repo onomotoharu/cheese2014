@@ -316,6 +316,12 @@ recipe
   margin-bottom: 50px;
 }
 
+.recipe_notes {
+  font-size: 12px;
+  padding: 0 20px;
+  color: rgb(188,188,188);
+}
+
 /*
 ----------
 mypage
@@ -338,7 +344,7 @@ mypage
 }
 
 #mypage_selector .selected{
-  color: rgb(0,164,0);    
+  color: rgb(194,201,111);   
 }
 
 
@@ -356,8 +362,8 @@ mypage
 #mypage_title{
   height: 56px;
   font-size:20px;
-  background-color: rgb(90,199,106);
-  box-shadow: 0px -2px 0px rgb(0,164,0) inset;
+  background-color: rgb(207,215,119);
+  box-shadow: 0px -2px 0px rgb(194,201,111) inset;
 }
 
 #mypage_title p{
@@ -377,7 +383,7 @@ mypage
   background-color: rgb(255,255,255);
   border-radius: 100%;
   text-align: center;
-  color: rgb(0,164,0);
+  color: rgb(207,215,119);
 }
 
 /* タイトル中央寄せ用　*/
