@@ -29,6 +29,30 @@ cheeseApp.config(['$routeProvider',
         templateUrl: 'partials/post.html',
         controller: 'PostCtrl'
       }).
+      when('/tutorial', {
+        templateUrl: 'partials/tutorial.html',
+        controller: 'TutorialCtrl'
+      }).
+      when('/tutorial2', {
+        templateUrl: 'partials/tutorial2.html',
+        controller: 'TutorialCtrl'
+      }).
+      when('/tutorial3', {
+        templateUrl: 'partials/tutorial3.html',
+        controller: 'TutorialCtrl'
+      }).
+      when('/tutorial4', {
+        templateUrl: 'partials/tutorial4.html',
+        controller: 'TutorialCtrl'
+      }).
+      when('/tutorial5', {
+        templateUrl: 'partials/tutorial5.html',
+        controller: 'TutorialCtrl'
+      }).
+      when('/tutorial6', {
+        templateUrl: 'partials/tutorial6.html',
+        controller: 'TutorialCtrl'
+      }).
       otherwise({
         redirectTo: '/'
       });
