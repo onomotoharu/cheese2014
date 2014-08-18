@@ -313,13 +313,15 @@ recipe
   background-color: rgb(39,176,59);
   border-radius: 6px;
   box-shadow: 0px -2px 0px rgb(0,100,6) inset;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .recipe_notes {
   font-size: 12px;
-  padding: 0 20px;
-  color: rgb(188,188,188);
+  margin:10px 0 0 0;
+  padding: 10px;
+  background: rgb(239,197,45);
+  color: rgb(255,255,255);
 }
 
 /*
