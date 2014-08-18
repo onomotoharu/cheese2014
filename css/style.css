@@ -101,7 +101,7 @@ recommend
 .recommend_card{ 
   /*font-family: "ヒラギノ角ゴ Pro W3";  TODO:bodyとかhtmlにfont-familyが効かない*/
   width: 250px;
-  height: 320px;
+  height: 350px;
   background: rgb(255,255,255);
   margin-top: 30px;
   margin-bottom: 20px;
@@ -129,7 +129,7 @@ recommend
 }
 
 .recommend_card_spacer{ 
-  height: 388px;
+  height: 367px;
 }
 
 .recommend_card_dummy_1{  
@@ -141,7 +141,7 @@ recommend
   margin-left : auto ; margin-right : auto ;
   padding: 10px;
   border: 1px solid rgb(200,200,200);
-  box-shadow: 0px 0px 10px rgba(200,200,200,0.4);
+  /*box-shadow: 0px 0px 10px rgba(200,200,200,0.4);*/
   border-radius: 6px;
 }
 .recommend_card_dummy_2{  
@@ -153,7 +153,7 @@ recommend
   margin-left : auto ; margin-right : auto ;
   padding: 10px;
   border: 1px solid rgb(200,200,200);
-  box-shadow: 0px 0px 10px rgba(200,200,200,0.4);
+  /*box-shadow: 0px 0px 10px rgba(200,200,200,0.4);*/
   border-radius: 6px;
 }
 
@@ -209,6 +209,7 @@ recipe
 ----------
 */
 .recipe_subtitle{
+  margin:5px;
   color: rgb(150,150,150);  
 }
 
@@ -228,7 +229,6 @@ recipe
 }
 
 #recipe_title{
-  margin:5px;
   font-size: 17px;
   color: rgb(150,150,150);    
 }
@@ -236,7 +236,8 @@ recipe
 .recipe_section{
   width: 100%;
   margin: 10px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left : auto ; margin-right : auto ;
   background-color: rgb(250,245,187)
 }
@@ -247,7 +248,7 @@ recipe
 
 .recipe_subsection{
   width: 100%;
-  margin-left: -10px;
+  /*margin-left: -10px;*/
   margin-top: 3px;
   background-color: rgb(255,255,255);
 }
@@ -297,6 +298,10 @@ recipe
   color: rgb(254,223,51);
 }
 
+#recipe_process td{
+  padding: 10px;
+}
+
 #recipe_done{
   margin-left : auto ; margin-right : auto ;
   width: 180px;
@@ -308,6 +313,7 @@ recipe
   background-color: rgb(39,176,59);
   border-radius: 6px;
   box-shadow: 0px -2px 0px rgb(0,100,6) inset;
+  margin-bottom: 50px;
 }
 
 .recipe_notes {
