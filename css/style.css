@@ -312,6 +312,8 @@ recipe
 
 .recipe_notes {
   font-size: 12px;
+  padding: 0 20px;
+  color: rgb(188,188,188);
 }
 
 /*
