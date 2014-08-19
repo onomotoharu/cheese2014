@@ -101,6 +101,10 @@ cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $r
     $location.path("/tutorial6");
   }
 
+  $scope.next7 = function(){
+    $location.path("/tutorial7");
+  }
+
   $scope.recommend = function(){
     $location.path("/");
   }

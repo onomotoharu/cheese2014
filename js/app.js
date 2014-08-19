@@ -53,6 +53,10 @@ cheeseApp.config(['$routeProvider',
         templateUrl: 'partials/tutorial6.html',
         controller: 'TutorialCtrl'
       }).
+      when('/tutorial7', {
+        templateUrl: 'partials/tutorial7.html',
+        controller: 'TutorialCtrl'
+      }).
       otherwise({
         redirectTo: '/'
       });
