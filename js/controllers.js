@@ -108,6 +108,8 @@ cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $r
   $scope.recommend = function(){
     $location.path("/");
   }
+
+
 });
 
 

@@ -582,7 +582,7 @@ tutorial
 
 .howto{
   text-align: center;
-  padding-top: 200px;
+  padding-top: 210px;
   line-height: 1.5em;
 }
 
@@ -615,8 +615,14 @@ tutorial
 }
 
 .movie{
-    position: absolute;
-    top: 18%;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+
+.movie img{
+  width: 100px;
+  height: 170px;
 }
 
 
