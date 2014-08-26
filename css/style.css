@@ -563,6 +563,66 @@ post
 
 
 /*
+----------
+tutorial
+----------
+*/
+
+.tutorial{
+  background-color: rgb(255,252,222);
+  margin: 10px;
+  height: 350px;
+}
+
+.movie{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.movie img{
+  width: 120px;
+  height: 216px;
+}
+
+.howto_start{
+  text-align: center;
+  padding-top: 150px;
+  line-height: 1.5em;
+}
+
+.howto{
+  text-align: center;
+  padding-top: 30px;
+  line-height: 1.5em;
+}
+
+.howto4{
+  text-align: center;
+  padding-top: 10px;
+  line-height: 1.5em;
+}
+
+.howto_end{
+  text-align: center;
+  padding-top: 120px;
+  line-height: 1.5em;
+}
+
+.tuto_btn{
+  width: 180px;
+  text-align: center;
+  color: rgb(255, 252, 222);
+  font-weight: bold;
+  background-color: rgb(239,197,45);
+  border: 1px solid rgb(239, 197, 45);
+  border-radius: 10px;
+  margin:20px auto;
+  padding: 15px 20px;
+}
+
+
+
+/*
 +++++++++++++++++++++
   css for demo 
 +++++++++++++++++++++
