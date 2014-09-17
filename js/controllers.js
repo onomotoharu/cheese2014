@@ -81,6 +81,25 @@ cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $r
   $rootScope.headerIconLeftClass = ""
   $rootScope.headerIconRightClass = ""
 
+  $rootScope.go = function (path, pageAnimationClass) {
+
+    if (typeof(pageAnimationClass) === 'undefined') {
+      $rootScope.pageAnimationClass = 'crossFade';
+    }
+
+    else {
+      $rootScope.pageAnimationClass = pageAnimationClass;
+    }
+
+    if (path === 'back') {
+      $window.history.back();
+    }
+
+    else {
+      $location.path(path);
+    }
+  };
+
   /*$scope.next2 = function(){
     $location.path("/tutorial2");
   }

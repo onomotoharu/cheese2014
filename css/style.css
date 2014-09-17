@@ -584,6 +584,12 @@ tutorial
   height: 250px;
 }
 
+.howto_rule{
+  text-align: center;
+  padding-top: 70px;
+  line-height: 1.5em;
+}
+
 .howto_start{
   text-align: center;
   padding-top: 150px;
@@ -618,6 +624,11 @@ tutorial
   border-radius: 10px;
   margin:10px auto;
   padding: 15px 20px;
+}
+
+.rule{
+  text-align: center;
+  margin-top: 10px;
 }
 
 
