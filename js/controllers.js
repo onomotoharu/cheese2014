@@ -81,7 +81,7 @@ cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $r
   $rootScope.headerIconLeftClass = ""
   $rootScope.headerIconRightClass = ""
 
-  $rootScope.go = function (path, pageAnimationClass) {
+  /*$rootScope.go = function (path, pageAnimationClass) {
 
     if (typeof(pageAnimationClass) === 'undefined') {
       $rootScope.pageAnimationClass = 'crossFade';
@@ -98,9 +98,13 @@ cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $r
     else {
       $location.path(path);
     }
-  };
+  };*/
 
-  /*$scope.next2 = function(){
+  $scope.next1 = function(){
+    $location.path("/tutorial1");
+  }
+
+  $scope.next2 = function(){
     $location.path("/tutorial2");
   }
 
@@ -122,7 +126,7 @@ cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $r
 
   $scope.next7 = function(){
     $location.path("/tutorial7");
-  }*/
+  }
 
   $scope.recommend = function(){
     $location.path("/");
