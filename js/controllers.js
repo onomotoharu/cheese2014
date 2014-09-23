@@ -74,12 +74,35 @@ cheeseControllers.controller('PostCtrl',function($scope,$http,$rootScope, $route
 });
 
 cheeseControllers.controller('TutorialCtrl',function($scope,$http,$rootScope, $routeParams, $location){
-  $rootScope.headerShow = true;
+  $rootScope.headerShow = false;
   $rootScope.footerShow = false;
   $rootScope.headerIconLeft = ""
   $rootScope.headerIconRight = ""
   $rootScope.headerIconLeftClass = ""
   $rootScope.headerIconRightClass = ""
+
+  /*$rootScope.go = function (path, pageAnimationClass) {
+
+    if (typeof(pageAnimationClass) === 'undefined') {
+      $rootScope.pageAnimationClass = 'crossFade';
+    }
+
+    else {
+      $rootScope.pageAnimationClass = pageAnimationClass;
+    }
+
+    if (path === 'back') {
+      $window.history.back();
+    }
+
+    else {
+      $location.path(path);
+    }
+  };*/
+
+  $scope.next1 = function(){
+    $location.path("/tutorial1");
+  }
 
   $scope.next2 = function(){
     $location.path("/tutorial2");

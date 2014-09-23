@@ -571,7 +571,7 @@ tutorial
 .tutorial{
   background-color: rgb(255,252,222);
   margin: 10px;
-  height: 350px;
+  height: 370px;
 }
 
 .movie{
@@ -580,8 +580,14 @@ tutorial
 }
 
 .movie img{
-  width: 120px;
-  height: 216px;
+  width: 140px;
+  height: 250px;
+}
+
+.howto_rule{
+  text-align: center;
+  padding-top: 20px;
+  line-height: 1.5em;
 }
 
 .howto_start{
@@ -592,13 +598,13 @@ tutorial
 
 .howto{
   text-align: center;
-  padding-top: 30px;
+  padding-top: 25px;
   line-height: 1.5em;
 }
 
 .howto4{
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
   line-height: 1.5em;
 }
 
@@ -616,8 +622,13 @@ tutorial
   background-color: rgb(239,197,45);
   border: 1px solid rgb(239, 197, 45);
   border-radius: 10px;
-  margin:20px auto;
+  margin:10px auto;
   padding: 15px 20px;
+}
+
+.rule{
+  text-align: center;
+  margin-top: 10px;
 }
 
 

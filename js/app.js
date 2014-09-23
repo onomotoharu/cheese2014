@@ -29,8 +29,12 @@ cheeseApp.config(['$routeProvider',
         templateUrl: 'partials/post.html',
         controller: 'PostCtrl'
       }).
-      when('/tutorial', {
-        templateUrl: 'partials/tutorial.html',
+      when('/rule', {
+        templateUrl: 'partials/rule.html',
+        controller: 'TutorialCtrl'
+      }).
+      when('/tutorial1', {
+        templateUrl: 'partials/tutorial1.html',
         controller: 'TutorialCtrl'
       }).
       when('/tutorial2', {
